@@ -1,0 +1,76 @@
+% ----------------------------------------------------------------------------------------
+% ---  27/10/2019 johannes.m.heinrich@gmail.com ---------------------------
+% ----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper]{class_cover_letter} 
+\usepackage{tikz}
+
+%----------------------------------------------------------------------------------------
+
+%\usepackage{palatino}
+\usepackage[sfdefault]{cabin}
+%\usepackage[default]{raleway}
+%\usepackage{lmodern}
+
+
+
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture,overlay]
+   		\node [rectangle, fill=sidecolor, anchor=north, minimum width=21cm, minimum height=4cm] (box) at 		
+   			    (9.5cm,0.85cm){};
+\end{tikzpicture}
+
+\vspace{-0.8cm}
+
+\profilesection{Cover Letter}
+
+\begin{center}
+\begin{table}[htpb]
+\centering
+\begin{tabular}{lllll}
+ Dr Johannes Matthias Heinrich & \hspace{1.95cm} \textsc{\Large\icon{\Telefon}} & \hspace{0.01cm} +49 170 40 10 30 8 & \hspace{1.45cm} \textsc{\large\icon{@}} & \hspace{0.01cm} \href{mailto:johannes.m.heinrich@gmail.com}{johannes.m.heinrich@gmail.com}\\
+72 Burton Rd, &  &  &  &  \\
+Camberwell, London,  &  &  &  &  \\
+SW9 6TQ &  &  &  & 
+\end{tabular}
+\end{table}
+\end{center}
+
+
+% Anschrift
+\hfill London, \today\\
+
+\vspace{0.25cm}
+
+Hiring Manager \\
+DeepMind Technologies Limited\\
+5 New Street Square\\
+London, EC4A 3TW
+	      
+\vspace{1cm}
+
+Dear Hiring Manager,
+
+I am writing you to express my strong interest in the position as Science Researcher, as advertised on the homepage of DeepMind. I am a physicist with a passion for Python, automation, and data analysis, and experience in a variety of fields such as condensed matter physics and magnetohydrodynamics. For the last five years I have been working on the design and implementation of state-of-the-art experiments in atomic physics. These experiments cover different technical areas, beginning with simulations and the design of the experiment in CAD programs, including the assembly, ultra high vacuum creation, cryogenics, electronics and optics. The sequence of such experiments is controlled by a central computer, bundeling the control over the various devices such as DACs, laser systems, FPGAs, and cameras. Most experiments are constituted of thousands of short, individual shots which require microsecond time resolution.\\
+
+My PhD project was the foundation of a complex experiment aimed at more accurately measuring the proton to electron mass ratio. The tasks included design, construction, testing and operation of the hardware, next to implementing control software, using different communication protocols for the various devices. I had free choice of technology for the control software, but also the responsibility to leave software with a high level of maintainability and extensibility. I designed the software around an abstract hardware layer and an independent, fast to modify graphical user interface. This approach led to a high sustainability of the code, which is still in use at Sorbonne University. As part of a Marie Curie network I reported at multiple international conferences and training schools about status and prospects of the project.\\
+
+I joined the group at Imperial College to implement a new ion trap experiment for investigation of quantum gate properties. My approach to interface experimental hardware was quickly picked up by the team, and I used it among other things to automate the bake-out setup for ultra high vacuum creation. Furthermore, I co-supervised a master project to interface a high-end camera for individual ion state detection.\\
+
+My passion for soft- and hardware also expands to my private life, where I implement evolutionary algorithms to tackle different problems, and work with hardware such as the raspberry pi. I am currently doing Google's machine learning crash course, after which I will revisit a problem I already treated with evolutionary algorithms.\\
+
+As of November 2019 the new setup at Imperial College demonstrated functionality, and I am looking for a new challenge in the field of automation and machine learning. I am fascinated by the impact advanced automation, robotics and artificial intelligence has on human society. This influence will only grow, and your open position as Science Researcher offers an exciting possibility to join this development.\\
+
+Thank you very much for considering my application.
+
+\vspace{0.7cm}
+Yours sincerely,
+
+\begin{textblock}{10}(1.15,25.35)
+\includegraphics[width=4cm]{unterschrift.png}
+\end{textblock}
+
+
+\end{document} 

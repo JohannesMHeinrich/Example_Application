@@ -1,0 +1,363 @@
+% ----------------------------------------------------------------------------------------
+% ---  27/10/2019 johannes.m.heinrich@gmail.com ---------------------------
+% ----------------------------------------------------------------------------------------
+
+\documentclass[a4paper]{class_cv}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+%\usepackage{palatino}
+\usepackage[sfdefault]{cabin}
+%\usepackage[default]{raleway}
+%\usepackage{lmodern}
+
+
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% Profile picture
+\profilepic{} 
+
+% Your name
+\cvname{Johannes}
+
+% Your name
+%\cvfullname{Dr Johannes Matthias Heinrich} 
+
+% Job title/career
+\cvjobtitle{Research Associate} 
+
+% Date of birth
+\cvdate{22/11/1985, Augsburg, DE} 
+
+% Short address/location, use \newline if more than 1 line is required
+\cvaddress{Dr Johannes Matthias Heinrich\newline 72 Burton Rd,\newline Camberwell, London,\newline SW9 6TQ} 
+
+% Phone number
+\cvnumberphone{+49 1704010308}
+
+% Homepage
+\cvsite{}
+
+% Email address
+\cvmail{johannes.m.heinrich@gmail.com} 
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	 Locations for the boxes in the cv timeline
+%----------------------------------------------------------------------------------------
+
+\newcommand\circlesize{0.2}
+\newcommand\circlesizetwo{0.1}
+
+\newcommand\xtimeline{3.}
+\newcommand\xdates{0.15}
+\newcommand\xwidth{12.4}
+
+\newcommand\yholbeinstart{0.0}
+\newcommand\yholbeinstop{3.15}
+
+\newcommand\ywuestart{3.85}
+\newcommand\ywuestop{7.1}
+
+\newcommand\ysglstart{7.85}
+\newcommand\ysglstop{10.55}
+
+\newcommand\yulmstart{11.3}
+\newcommand\yulmstop{13.55}
+
+\newcommand\yparisstart{14.3}
+\newcommand\yparisstop{21.15}
+
+\newcommand\londonstart{21.85}
+\newcommand\londonstop{25.5}
+
+\newcommand\offsetXA{1.}
+\newcommand\offsetXB{.5}
+\newcommand\offsetYA{.4}
+\newcommand\offsetYB{.8}
+
+\newcommand\deltaywue{0.626}
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+
+\aboutme{
+
+\vspace{0.1cm}
+I am a physicist experienced in a variety of fields with a passion for Python and automation.
+
+For the last five years I have been working on the design and implementation of state of the art experiments in atomic physics. The sequence of such experiments is controlled by a central computer, bundeling the control over the various devices. For this task, among others, I use Python.
+
+My passion for soft- and hardware also expands to my private life, where I implement evolutionary algorithms for different problems and experiment with $\,$ hardware such as the raspberry pi.}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+\aboutmeskills{
+\vspace{0.1cm}
+
+Software:
+\begin{itemize}
+\item Python, pyqt
+\item Mathematica
+\item COMSOL multiphysics
+\item SIMION
+\item CATIA, SolidWorks
+\item GitHub
+\item Latex, Blender
+\end{itemize}
+\vspace{0.25cm}
+\hrule
+\vspace{0.1cm}
+Hardware:
+\begin{itemize}
+\item ultra high vacuum creation
+\item lasers and optics
+\item electronics
+\item raspberry pi, red pitaya
+\end{itemize}
+\vspace{0.25cm}
+\hrule
+\vspace{0.1cm}
+Languages:
+\begin{itemize}
+\item English
+\item German
+\end{itemize}
+
+}
+
+
+
+%----------------------------------------------------------------------------------------
+%	 Print sidebar
+%----------------------------------------------------------------------------------------
+
+\makeprofile
+
+
+
+%----------------------------------------------------------------------------------------
+%	 CV timeline
+%----------------------------------------------------------------------------------------
+
+\vspace{-0.3cm}
+
+\profilesection{Curriculum vitae}
+
+\vspace{0.5cm}
+
+\begin{tikzpicture}
+
+%	\draw[help lines,xstep=.5,ystep=.5, white] (0,0) grid (13,27);
+	
+	% ---------------------------------------------------------------------------------
+	% --- TIMELINE ----------------------------------------------------------------	
+	% ---------------------------------------------------------------------------------
+	\draw [line width=0.5mm, mainblue, -{Latex[length=5mm, width=3.3mm]}] (\xtimeline, \yholbeinstart -0.25) -- (\xtimeline, \londonstop + 1.) ;
+	
+
+	% holbein -----------------------------------------------------------------------------
+	% the box
+	\draw [line width=0.2mm, mainblue]
+	(\xtimeline - \offsetXA, \yholbeinstop) -- (\xwidth, \yholbeinstop) --
+	(\xwidth, \yholbeinstart + \offsetYA) -- (\xtimeline, \yholbeinstart +\offsetYA) ;
+	
+	\draw [line width=0.2mm, mainblue ]
+	(\xtimeline + \offsetXB, \yholbeinstop - \offsetYB) -- (\xwidth - \offsetXB, \yholbeinstop - \offsetYB) ;	
+	
+	% the circles
+	\draw [mainblue,line width=0.5mm,fill=white] (\xtimeline,\yholbeinstop) circle (\circlesize) ;
+	\draw [mainblue,line width=0.5mm,fill=mainblue] (\xtimeline,\yholbeinstop) circle (\circlesizetwo) ;
+
+	% the dates
+	\node[text width=1.75cm, anchor = west, inner sep=0pt, align=right] at (\xdates, \yholbeinstop) {05/2005};
+
+	% the text
+	\node[text width=8.5cm, anchor = north west,  inner sep=0pt, align=justify] at
+	(\xtimeline + \offsetXB, \yholbeinstop - \offsetYA) 
+	{{\textsc{Holbein Gymnasium Augsburg}}\\[0.25cm]
+	Abitur with Award for Excellence in Physics by DPG\\[-0.3cm]
+	\begin{itemize}
+		\item advanced course mathematics: \hfill 14/15
+		\item advanced course physics: \hfill 15/15
+	\end{itemize}} ;
+
+	% ---------------------------------------------------------------------------------------
+			
+	% wuerzburg -------------------------------------------------------------------------
+	% the box
+	\draw [line width=0.2mm, mainblue ]
+	(\xtimeline - \offsetXA, \ywuestop) -- (\xwidth, \ywuestop) --
+	(\xwidth, \ywuestart) -- (\xtimeline - \offsetXA, \ywuestart) ;
+	
+	\draw [line width=0.2mm, mainblue ]
+	(\xtimeline + \offsetXB, \ywuestop - \offsetYB) -- (\xwidth - \offsetXB, \ywuestop - \offsetYB) ;	
+	
+	% the circles
+	\draw [mainblue,line width=0.5mm,fill=mainblue] (\xtimeline,\ywuestart) circle (\circlesizetwo);
+	\draw [mainblue,line width=0.5mm,fill=white] (\xtimeline,\ywuestop) circle (\circlesize);
+	\draw [mainblue,line width=0.5mm,fill=mainblue] (\xtimeline,\ywuestop) circle (\circlesizetwo);
+
+	% the dates
+	\node[text width=1.75cm, anchor = west, inner sep=0pt, align=right] at (\xdates, \ywuestart) {10/2005};
+	\node[text width=1.75cm, anchor = west, inner sep=0pt, align=right] at (\xdates, \ywuestop) {06/2013};
+
+	% the text	
+	\node[text width=8.5cm, anchor = north west, inner sep=0pt, align=justify] at 
+	(\xtimeline + \offsetXB, \ywuestop - \offsetYA)
+	{{\textsc{Julius-Maximilians-University W{\"u}rzburg}}\\[0.25cm]
+	Study of physics with informatics and chemistry as minors, grade: gut\\[0.1cm]
+	Diploma thesis with Prof. W. Hanke:\\[-0.3cm]
+	\begin{center}Strong Coupling FRG Analysis of Frustrated Magnets \end{center}
+	\vspace{0.25cm}};
+	% ---------------------------------------------------------------------------------------
+		
+	% sgl ----------------------------------------------------------------------------------
+	% the box
+	\draw [line width=0.2mm, mainblue ]
+	(\xtimeline - \offsetXA, \ysglstop) -- (\xwidth, \ysglstop) --
+	(\xwidth, \ysglstart) -- (\xtimeline - \offsetXA, \ysglstart) ;
+	
+	\draw [line width=0.2mm, mainblue ]
+	(\xtimeline + \offsetXB, \ysglstop - \offsetYB) -- (\xwidth - \offsetXB, \ysglstop - \offsetYB) ;	
+	
+	% the circles
+	\draw [mainblue,line width=0.5mm,fill=mainblue] (\xtimeline,\ysglstart) circle (\circlesizetwo);
+	\draw [mainblue,line width=0.5mm,fill=white] (\xtimeline,\ysglstop) circle (\circlesize);
+	\draw [mainblue,line width=0.5mm,fill=mainblue] (\xtimeline,\ysglstop) circle (\circlesizetwo);
+	
+	% the dates
+	\node[text width=1.75cm, anchor = west, inner sep=0pt, align=right] at (\xdates, \ysglstart) {10/2013};
+	\node[text width=1.75cm, anchor = west, inner sep=0pt, align=right] at (\xdates, \ysglstop) {04/2014};
+
+	% the text		
+	\node[text width=8.5cm, anchor = north west,  inner sep=0pt, align=justify] at
+	(\xtimeline + \offsetXB, \ysglstop - \offsetYA)
+	{{\textsc{SGL Carbon, Department T\&I Modeling}}\\[0.25cm]
+	Internship with Dr. T. Frommelt (now Prof.):\\[-0.3cm]
+	\begin{center} Investigation of instabilities in the Hall-H\'{e}roult-process for smelting aluminium\end{center}
+	};
+	% ---------------------------------------------------------------------------------------
+		
+	% ulm ----------------------------------------------------------------------------------
+	% the box
+	\draw [line width=0.2mm, mainblue ]
+	(\xtimeline - \offsetXA, \yulmstop) -- (\xwidth, \yulmstop) --
+	(\xwidth, \yulmstart) -- (\xtimeline - \offsetXA, \yulmstart) ;
+	
+	\draw [line width=0.2mm, mainblue ]
+	(\xtimeline + \offsetXB, \yulmstop - \offsetYB) -- (\xwidth - \offsetXB, \yulmstop - \offsetYB) ;	
+	
+	% the circles
+	\draw [mainblue,line width=0.5mm,fill=mainblue] (\xtimeline,\yulmstart ) circle (\circlesizetwo);
+	\draw [mainblue,line width=0.5mm,fill=white] (\xtimeline,\yulmstop ) circle (\circlesize);
+	\draw [mainblue,line width=0.5mm,fill=mainblue] (\xtimeline,\yulmstop ) circle (\circlesizetwo);
+	
+	% the dates
+	\node[text width=1.75cm, anchor = west, inner sep=0pt, align=right] at (\xdates, \yulmstart) {05/2014};
+	\node[text width=1.75cm, anchor = west, inner sep=0pt, align=right] at (\xdates, \yulmstop) {09/2014};
+	
+	% the text		
+	\node[text width=8.5cm, anchor = north west,  inner sep=0pt, align=justify] at
+	(\xtimeline + \offsetXB, \yulmstop - \offsetYA)
+	{{\textsc{Institute of Quantum Matter, University of Ulm}}\\[0.25cm]
+	Internship with Prof. J. Hecker-Denschlag\\[-0.3cm]
+	\begin{center} Work on a diode laser system at 671nm \end{center}};
+	% ---------------------------------------------------------------------------------------
+			
+	% paris ----------------------------------------------------------------------------------
+	% the box
+	\draw [line width=0.2mm, mainblue ]
+	(\xtimeline - \offsetXA, \yparisstop) -- (\xwidth, \yparisstop) --
+	(\xwidth, \yparisstart) -- (\xtimeline - \offsetXA, \yparisstart) ;
+	
+	\draw [line width=0.2mm, mainblue ]
+	(\xtimeline + \offsetXB, \yparisstop - \offsetYB) -- (\xwidth - \offsetXB, \yparisstop - \offsetYB) ;	
+	
+	% the circles
+	\draw [mainblue,line width=0.5mm,fill=mainblue] (\xtimeline,\yparisstart ) circle (\circlesizetwo);
+	\draw [mainblue,line width=0.5mm,fill=white] (\xtimeline,\yparisstop ) circle (\circlesize);	
+	\draw [mainblue,line width=0.5mm,fill=mainblue] (\xtimeline,\yparisstop ) circle (\circlesizetwo);	
+	
+	% the dates
+	\node[text width=1.75cm, anchor = west, inner sep=0pt, align=right] at (\xdates, \yparisstart) {10/2014};
+	\node[text width=1.75cm, anchor = west, inner sep=0pt, align=right] at (\xdates, \yparisstop) {07/2018};
+	
+	% the text
+	\node[text width=8.5cm, anchor = north west,  inner sep=0pt, align=justify] at
+	(\xtimeline + \offsetXB, \yparisstop - \offsetYA)
+	{{\textsc{Laboratoire Kastler Brossel, Sorbonne University}}\\[0.25cm]
+	PostDoc with Prof. L. Hilico\\[-0.3cm]
+	\begin{itemize}
+		\item automation of sympathetically cooled ion detection via imaging by an EMCCD
+%		\item a Python program to detect the amount of sympathetically cooled H$_{2}^{+}$ ions via imaging by an EMCCD.
+	\end{itemize}
+	\vspace{0.35cm}
+	PhD thesis with Prof. L. Hilico:\\[-0.3cm]
+	\begin{center}A Be$^{+}$ Ion Trap for H$_{2}^{+}$ Spectroscopy, \end{center}
+	\vspace{0.15cm}
+	a {\textsc{Marie Curie}} project funded by the European Union, which included design, assembly, and operation of\\[-0.3cm]
+	\begin{itemize}
+		\item a diode based master-slave laser system at 626nm
+		\item an ion trap including supplies and vacuum system
+		\item atomic ovens and imaging systems
+		\item control software
+	\end{itemize}};
+	% ---------------------------------------------------------------------------------------
+		
+	% london ----------------------------------------------------------------------------------
+	% the box
+	\draw [line width=0.2mm, mainblue ]
+	(\xtimeline - \offsetXA, \londonstop) -- (\xwidth, \londonstop) --
+	(\xwidth, \londonstart) -- (\xtimeline - \offsetXA, \londonstart) ;
+	
+	\draw [line width=0.2mm, mainblue ]
+	(\xtimeline + \offsetXB, \londonstop - \offsetYB) -- (\xwidth - \offsetXB, \londonstop - \offsetYB) ;	
+	
+	% the circles	
+	\draw [mainblue,line width=0.5mm,fill=mainblue] (\xtimeline, \londonstart) circle (\circlesizetwo);	
+	\draw [mainblue,line width=0.5mm,fill=white] (\xtimeline, \londonstop) circle (\circlesize);
+	
+	% the dates
+	\node[text width=1.75cm, anchor = west, inner sep=0pt, align=right] at (\xdates, \londonstart) {10/2018};
+	\node[text width=1.75cm, anchor = west, inner sep=0pt, align=right] at (\xdates, \londonstop) {11/2019};
+	
+	% the text
+	\node[text width=8.5cm, anchor = north west,  inner sep=0pt, align=justify] at 
+	(\xtimeline + \offsetXB, \londonstop - \offsetYA)
+	{{\textsc{Imperial College London}}\\[0.25cm]
+	Research Associate with Prof. R. Thompson\\[-0.3cm]
+	\begin{itemize}
+		\item implementation of a new ion trap experiment:\\
+			   vacuum system, ovens, software, among others
+		\item refurbishment of an established experiment
+		\item co-supervision of master- and PhD students
+	\end{itemize}};
+	% ---------------------------------------------------------------------------------------
+	
+\end{tikzpicture}
+   
+
+
+\end{document} 
