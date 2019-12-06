@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/W32TeX) (format=pdflatex 2014.5.3)  4 DEC 2019 09:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/W32TeX) (format=pdflatex 2014.5.3)  6 DEC 2019 09:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -790,8 +790,8 @@ Overfull \hbox (17.69052pt too wide) in paragraph at lines 156--156
 LaTeX Font Info:    Font shape `T1/Cabin-TLF/m/n' will be
 (Font)              scaled to size 20.74pt on input line 156.
 
-Overfull \hbox (3.63383pt too wide) in paragraph at lines 156--156
-\T1/Cabin-TLF/m/n/10 puter, bun-del-ing the con-trol over the var-
+Overfull \hbox (2.6288pt too wide) in paragraph at lines 156--156
+\T1/Cabin-TLF/m/n/10 physics. The con-trol of such ex-per-i-ments
  []
 
 
@@ -872,7 +872,7 @@ Package rerunfilecheck Info: File `jmheinrich_cv.out' has not changed.
 Here is how much of TeX's memory you used:
  17638 strings out of 493308
  328307 string characters out of 6141368
- 403165 words of memory out of 5000000
+ 403245 words of memory out of 5000000
  20788 multiletter control sequences out of 15000+600000
  73393 words of font info for 31 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -883,7 +883,7 @@ t/fonts/enc/dvips/cabin/cbn_aojlca.enc}<c:/texlive/2013/texmf-dist/fonts/type1/
 impallari/cabin/Cabin-Regular.pfb><c:/texlive/2013/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr7.pfb><c:/texlive/2013/texmf-dist/fonts/type1/public/marvosym/
 marvosym.pfb>
-Output written on jmheinrich_cv.pdf (1 page, 36230 bytes).
+Output written on jmheinrich_cv.pdf (1 page, 36290 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream

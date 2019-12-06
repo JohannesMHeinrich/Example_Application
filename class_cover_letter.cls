@@ -49,7 +49,7 @@
 \definecolor{white}{RGB}{255,255,255}
 \definecolor{gray}{RGB}{211,211,211}
 \definecolor{sidecolor}{RGB}{231,231,231}
-\definecolor{mainblue}{RGB}{37,24,170}
+\definecolor{mainblue}{RGB}{40,70,140}
 \definecolor{maingray}{RGB}{231,231,231}
 
 %----------------------------------------------------------------------------------------
